@@ -1,0 +1,28 @@
+.rbxl
+.rbxlx
+.rbxl.bak
+.rbxlx.bak
+*.rbxm
+*.rbxmx
+LocalSettings.xml
+EditHistory.xml
+*.sav
+PlaceID.txt
+roblox-files.txt
+.dropbox
+.svn
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+# Rojo
+serve.project.json
+.build/
+# IDE
+.idea/
+*.iml
+.vscode/
+# Roblox Studio
+LocalSettings.blob

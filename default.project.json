@@ -1,0 +1,196 @@
+{
+	"name": "GrowAKingdom",
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"Main": {
+				"$className": "Script",
+				"$path": "ServerScriptService/Main.server.lua"
+			},
+			"Bootstrap": {
+				"$className": "Folder",
+				"InitOrder": {
+					"$className": "ModuleScript",
+					"$path": "ServerScriptService/Bootstrap/InitOrder.lua"
+				},
+				"ServerBootstrapper": {
+					"$className": "ModuleScript",
+					"$path": "ServerScriptService/Bootstrap/ServerBootstrapper.lua"
+				}
+			},
+			"Services": {
+				"$className": "Folder",
+				"Assets": {
+					"$className": "Folder",
+					"AssetRegistry": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Assets/AssetRegistry.lua"
+					}
+				},
+				"Building": {
+					"$className": "Folder",
+					"BuildingEvents": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/BuildingEvents.lua"
+					},
+					"BuildingFactory": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/BuildingFactory.lua"
+					},
+					"BuildingService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/BuildingService.lua"
+					},
+					"ConstructionTimer": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/ConstructionTimer.lua"
+					},
+					"ConstructionVisualizer": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/ConstructionVisualizer.lua"
+					},
+					"PlacementHandler": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/PlacementHandler.lua"
+					},
+					"PlacementValidator": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/PlacementValidator.lua"
+					},
+					"RequirementValidator": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Building/RequirementValidator.lua"
+					}
+				},
+				"Core": {
+					"$className": "Folder",
+					"EventBusService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Core/EventBusService.lua"
+					},
+					"LoggerService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Core/LoggerService.lua"
+					}
+				},
+				"Kingdom": {
+					"$className": "Folder",
+					"KingdomService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Kingdom/KingdomService.lua"
+					}
+				},
+				"Player": {
+					"$className": "Folder",
+					"MigrationService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Player/MigrationService.lua"
+					},
+					"PlayerJoinHandler": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Player/PlayerJoinHandler.lua"
+					},
+					"ProfileService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Player/ProfileService.lua"
+					}
+				},
+				"Plot": {
+					"$className": "Folder",
+					"PlotService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Plot/PlotService.lua"
+					}
+				},
+				"Production": {
+					"$className": "Folder",
+					"ProductionService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Production/ProductionService.lua"
+					}
+				},
+				"Resource": {
+					"$className": "Folder",
+					"ResourceService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Resource/ResourceService.lua"
+					}
+				},
+				"Workers": {
+					"$className": "Folder",
+					"WorkerService": {
+						"$className": "ModuleScript",
+						"$path": "ServerScriptService/Services/Workers/WorkerService.lua"
+					}
+				}
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Shared": {
+				"$className": "Folder",
+				"Buildings": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Buildings"
+				},
+				"DI": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/DI"
+				},
+				"Enums": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Enums"
+				},
+				"Grid": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Grid"
+				},
+				"Models": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Models"
+				},
+				"Remotes": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Remotes"
+				},
+				"Types": {
+					"$className": "Folder",
+					"$path": "ReplicatedStorage/Shared/Types"
+				}
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"Main": {
+					"$className": "LocalScript",
+					"$path": "StarterPlayerScripts/Main.client.lua"
+				},
+				"Controllers": {
+					"$className": "Folder",
+					"BuildMenuController": {
+						"$className": "ModuleScript",
+						"$path": "StarterPlayerScripts/Controllers/BuildMenuController.lua"
+					},
+					"PlacementController": {
+						"$className": "ModuleScript",
+						"$path": "StarterPlayerScripts/Controllers/PlacementController.lua"
+					}
+				},
+				"UI": {
+					"$className": "Folder",
+					"BuildMenuView": {
+						"$className": "ModuleScript",
+						"$path": "StarterPlayerScripts/UI/BuildMenuView.lua"
+					}
+				},
+				"Preview": {
+					"$className": "Folder",
+					"$path": "StarterPlayerScripts/Preview"
+				}
+			}
+		}
+	}
+}
